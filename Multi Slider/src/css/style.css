@@ -1,0 +1,367 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  cursor: none !important;
+}
+
+main {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/slide1img1.jpg");
+  background-size: 100% 700px;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.644);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#slider {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+#slider .slider-1 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transition: 0.4s;
+  background-size: cover;
+}
+#slider .slider-1 > li {
+  position: absolute;
+  transform: scaleX(0.5) scaleY(1.5) translateY(100px);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 90;
+}
+#slider .slider-1 > li img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+}
+#slider .slider-2 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transition: 0.4s;
+  background-size: cover;
+}
+#slider .slider-2 > li {
+  position: absolute;
+  transform: scaleX(0.5) scaleY(1.5) translateY(100px);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 90;
+}
+#slider .slider-2 > li img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+}
+#slider .slider-3 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transition: 0.4s;
+  background-size: cover;
+}
+#slider .slider-3 > li {
+  position: absolute;
+  transform: scaleX(0.5) scaleY(1.5) translateY(100px);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 90;
+}
+#slider .slider-3 > li img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+}
+#slider .slider-4 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transition: 0.4s;
+  background-size: cover;
+}
+#slider .slider-4 > li {
+  position: absolute;
+  transform: scaleX(0.5) scaleY(1.5) translateY(100px);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 90;
+}
+#slider .slider-4 > li img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+}
+
+#slider-nav {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 99;
+}
+#slider-nav ul {
+  width: 500px;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#slider-nav ul li {
+  font-size: 2.2rem;
+  margin: 0.875rem 0;
+  position: relative;
+  transition: 0.4s;
+  color: #aaaaaa;
+}
+#slider-nav ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 5px;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+#slider-nav ul li:nth-of-type(1)::before {
+  background: linear-gradient(to right, #6a3093, #a044ff);
+}
+#slider-nav ul li:nth-of-type(2)::before {
+  background: linear-gradient(to right, #11998e, #38ef7d);
+}
+#slider-nav ul li:nth-of-type(3)::before {
+  background: linear-gradient(to right, #f12711, #f5af19);
+}
+#slider-nav ul li:nth-of-type(4)::before {
+  background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#slider-nav > h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 500px;
+  height: 10%;
+  font-size: 1rem;
+  font-weight: 300;
+}
+#slider-nav > h2 span {
+  margin-bottom: 2rem;
+}
+#slider-nav > h2 span:nth-of-type(2) {
+  width: 60px;
+  height: 2px;
+  background-color: white;
+  display: block;
+  margin: 0 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.slider-1-img-1 {
+  width: 230px;
+  height: 300px;
+  top: 40%;
+  left: 5%;
+  transition: 0.8s;
+}
+
+.slider-1-img-2 {
+  width: 230px;
+  height: 300px;
+  top: 15%;
+  left: 25%;
+  transition: 0.4s;
+}
+
+.slider-1-img-3 {
+  width: 230px;
+  height: 300px;
+  top: 10%;
+  right: 25%;
+  transition: 0.2s;
+}
+
+.slider-1-img-4 {
+  width: 230px;
+  height: 300px;
+  top: 50%;
+  right: 5%;
+  transition: 0.6s;
+}
+
+.slider-2-img-1 {
+  width: 230px;
+  height: 300px;
+  top: 10%;
+  left: 5%;
+  transition: 0.4s;
+}
+
+.slider-2-img-2 {
+  width: 230px;
+  height: 300px;
+  top: 45%;
+  left: 25%;
+  transition: 0.2s;
+}
+
+.slider-2-img-3 {
+  width: 230px;
+  height: 300px;
+  top: 40%;
+  right: 25%;
+  transition: 0.6s;
+}
+
+.slider-2-img-4 {
+  width: 230px;
+  height: 300px;
+  top: 20%;
+  right: 5%;
+  transition: 0.2s;
+}
+
+.slider-3-img-1 {
+  width: 230px;
+  height: 300px;
+  top: 50%;
+  left: 5%;
+  transition: 0.6s;
+}
+
+.slider-3-img-2 {
+  width: 230px;
+  height: 300px;
+  top: 25%;
+  left: 25%;
+  transition: 0.2s;
+}
+
+.slider-3-img-3 {
+  width: 230px;
+  height: 300px;
+  top: 30%;
+  right: 25%;
+  transition: 0.4s;
+}
+
+.slider-3-img-4 {
+  width: 230px;
+  height: 300px;
+  top: 10%;
+  right: 5%;
+  transition: 0.6s;
+}
+
+.slider-4-img-1 {
+  width: 230px;
+  height: 300px;
+  top: 10%;
+  left: 5%;
+  transition: 0.4s;
+}
+
+.slider-4-img-2 {
+  width: 230px;
+  height: 300px;
+  top: 40%;
+  left: 25%;
+  transition: 0.2s;
+}
+
+.slider-4-img-3 {
+  width: 230px;
+  height: 300px;
+  top: 30%;
+  right: 25%;
+  transition: 0.4s;
+}
+
+.slider-4-img-4 {
+  width: 230px;
+  height: 300px;
+  top: 20%;
+  right: 5%;
+  transition: 0.6s;
+}
+
+.nav-active {
+  color: white !important;
+}
+.nav-active::before {
+  width: 100% !important;
+}
+
+.actived li {
+  transform: scaleX(1) scaleY(1) translateY(0) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.circle-1 {
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid white;
+  position: fixed;
+  transition: height 0.4s, width 0.4s;
+  z-index: 96;
+}
+
+.circle-2 {
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 95;
+}/*# sourceMappingURL=style.css.map */
